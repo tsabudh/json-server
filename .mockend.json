@@ -1,76 +1,138 @@
 {
-  "Post": {
-    "_": {
-      "items": 10,
-      "data": [
-        {
-          "title": "First title",
-          "body": "You can use your own data or have random values generated for you."
-        },
-        {
-          "title": "Second title",
-          "body": "The rest of the posts will have random values"
-        }
-      ]
+  "tickets": [
+    {
+      "id": 3,
+      "customerAvatar": "robert-downey.png",
+      "customerName": "Robert Downey",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "When will I be charged this month?",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 26, 2019",
+      "ticketTime": "7:30 PM",
+      "ticketPriority": "high"
     },
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+    {
+      "id": 4,
+      "customerAvatar": "christian-bale.png",
+      "customerName": "Christian Bale",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "Payment not going through",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 25, 2019",
+      "ticketTime": "5:00 PM",
+      "ticketPriority": "normal"
     },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
+    {
+      "id": 5,
+      "customerAvatar": "henry-cavil.png",
+      "customerName": "Henry Cavil",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "Unable to add replies",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 25, 2019",
+      "ticketTime": "4:00 PM",
+      "ticketPriority": "high"
     },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
+    {
+      "id": 6,
+      "customerAvatar": "chris-evans.png",
+      "customerName": "Chris Evans",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "Downtime since last week",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 25, 2019",
+      "ticketTime": "2:00 PM",
+      "ticketPriority": "normal"
     },
-    "category": {
-      "string": ["one", "two", "three"]
+    {
+      "id": 7,
+      "customerAvatar": "sam-smith.png",
+      "customerName": "Sam Smith",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "Referral Bonus",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 25, 2019",
+      "ticketTime": "11:30 PM",
+      "ticketPriority": "low"
     },
-    "isDraft": {
-      "boolean": {}
-    },
-    "views": {
-      "int": {
-        "min": 0,
-        "max": 1000
-      }
-    },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "comments": {
-      "hasMany": "Comment"
+    {
+      "id": 8,
+      "customerAvatar": "steve-rogers.png",
+      "customerName": "Steve Rogers ",
+      "customerDate": "on 24.05.2019",
+      "ticketName": "How do I change my password?",
+      "ticketInformation": "Updated 1 day ago",
+      "ticketDate": "May 24, 2019",
+      "ticketTime": "1:00 PM",
+      "ticketPriority": "normal"
     }
-  },
-  "Comment": {
-    "_": {
-      "items": 25
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jonas A Schmedtmann",
+      "email": "admin@natours.io",
+      "password": "1234"
     },
-    "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    {
+      "id": 2,
+      "name": "Lourdes Browning",
+      "email": "loulou@example.com",
+      "password": "1234"
     },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
+    {
+      "id": 3,
+      "name": "Sophie Louise Hart",
+      "email": "sophie@example.com",
+      "password": "1234"
     },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
+    {
+      "id": 4,
+      "name": "Leo Gillespie",
+      "email": "leo@example.com",
+      "password": "1234"
     },
-    "post": {
-      "belongsTo": "Post"
+    {
+      "id": 5,
+      "name": "Jennifer Hardy",
+      "email": "jennifer@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 6,
+      "name": "Kate Morrison",
+      "email": "kate@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 7,
+      "name": "Steve T. Scaife",
+      "email": "steve@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 8,
+      "name": "Aarav Lynn",
+      "email": "aarav@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 9,
+      "name": "Miyah Myles",
+      "email": "miyah@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 10,
+      "name": "Max Smith",
+      "email": "max@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 11,
+      "name": "Alexander Jones",
+      "email": "alex@example.com",
+      "password": "1234"
     }
-  }
+  ]
 }
