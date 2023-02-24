@@ -1,73 +1,9 @@
 {
-  "tickets": [
-    {
-      "id": 3,
-      "customerAvatar": "robert-downey.png",
-      "customerName": "Robert Downey",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "When will I be charged this month?",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 26, 2019",
-      "ticketTime": "7:30 PM",
-      "ticketPriority": "high"
-    },
-    {
-      "id": 4,
-      "customerAvatar": "christian-bale.png",
-      "customerName": "Christian Bale",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "Payment not going through",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 25, 2019",
-      "ticketTime": "5:00 PM",
-      "ticketPriority": "normal"
-    },
-    {
-      "id": 5,
-      "customerAvatar": "henry-cavil.png",
-      "customerName": "Henry Cavil",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "Unable to add replies",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 25, 2019",
-      "ticketTime": "4:00 PM",
-      "ticketPriority": "high"
-    },
-    {
-      "id": 6,
-      "customerAvatar": "chris-evans.png",
-      "customerName": "Chris Evans",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "Downtime since last week",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 25, 2019",
-      "ticketTime": "2:00 PM",
-      "ticketPriority": "normal"
-    },
-    {
-      "id": 7,
-      "customerAvatar": "sam-smith.png",
-      "customerName": "Sam Smith",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "Referral Bonus",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 25, 2019",
-      "ticketTime": "11:30 PM",
-      "ticketPriority": "low"
-    },
-    {
-      "id": 8,
-      "customerAvatar": "steve-rogers.png",
-      "customerName": "Steve Rogers ",
-      "customerDate": "on 24.05.2019",
-      "ticketName": "How do I change my password?",
-      "ticketInformation": "Updated 1 day ago",
-      "ticketDate": "May 24, 2019",
-      "ticketTime": "1:00 PM",
-      "ticketPriority": "normal"
-    }
-  ],
-  "users": [
+  "users": {
+    "_": {
+      "items": 10,
+      "data": [
+        
     {
       "id": 1,
       "name": "Jonas A Schmedtmann",
@@ -134,5 +70,67 @@
       "email": "alex@example.com",
       "password": "1234"
     }
-  ]
+  
+      ]
+    },
+    "cover": {
+      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+    },
+    "title": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "category": {
+      "string": ["one", "two", "three"]
+    },
+    "isDraft": {
+      "boolean": {}
+    },
+    "views": {
+      "int": {
+        "min": 0,
+        "max": 1000
+      }
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "_": {
+      "items": 25
+    },
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
