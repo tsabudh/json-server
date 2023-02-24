@@ -1,76 +1,16 @@
 {
-  "posts": {
+  "Post": {
     "_": {
       "items": 10,
       "data": [
-        
-    {
-      "id": 1,
-      "name": "Jonas A Schmedtmann",
-      "email": "admin@natours.io",
-      "password": "1234"
-    },
-    {
-      "id": 2,
-      "name": "Lourdes Browning",
-      "email": "loulou@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 3,
-      "name": "Sophie Louise Hart",
-      "email": "sophie@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 4,
-      "name": "Leo Gillespie",
-      "email": "leo@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 5,
-      "name": "Jennifer Hardy",
-      "email": "jennifer@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 6,
-      "name": "Kate Morrison",
-      "email": "kate@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 7,
-      "name": "Steve T. Scaife",
-      "email": "steve@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 8,
-      "name": "Aarav Lynn",
-      "email": "aarav@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 9,
-      "name": "Miyah Myles",
-      "email": "miyah@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 10,
-      "name": "Max Smith",
-      "email": "max@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 11,
-      "name": "Alexander Jones",
-      "email": "alex@example.com",
-      "password": "1234"
-    }
-  
+        {
+          "title": "First title",
+          "body": "You can use your own data or have random values generated for you."
+        },
+        {
+          "title": "Second title",
+          "body": "The rest of the posts will have random values"
+        }
       ]
     },
     "cover": {
