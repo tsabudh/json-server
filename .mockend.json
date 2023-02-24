@@ -1,10 +1,7 @@
 {
-  "Post": {
-    "users": {
-      "id": 7,
-      "name": "Steve T. Scaife",
-      "email": "steve@example.com",
-      "password": "1234"
+  "Book": {
+    "_": {
+      "data": [{ "title": "Title 1" }, { "title": "Title 2" }]
     }
   }
 }
